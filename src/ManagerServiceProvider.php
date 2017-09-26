@@ -1,4 +1,4 @@
-<?php namespace Barryvdh\TranslationManager;
+<?php namespace Eledi\TranslationManager;
 
 use Illuminate\Routing\Router;
 use Illuminate\Support\ServiceProvider;
@@ -24,7 +24,7 @@ class ManagerServiceProvider extends ServiceProvider {
         $this->publishes([$configPath => config_path('translation-manager.php')], 'config');
 
         $this->app->singleton('translation-manager', function ($app) {
-            $manager = $app->make('Barryvdh\TranslationManager\Manager');
+            $manager = $app->make('Eledi\TranslationManager\Manager');
             return $manager;
         });
 
@@ -74,7 +74,7 @@ class ManagerServiceProvider extends ServiceProvider {
         ], 'migrations');
 
         $config = $this->app['config']->get('translation-manager.route', []);
-        $config['namespace'] = 'Barryvdh\TranslationManager';
+        $config['namespace'] = 'Eledi\TranslationManager';
 
         $router->group($config, function($router)
         {

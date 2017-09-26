@@ -1,4 +1,4 @@
-<?php namespace Barryvdh\TranslationManager;
+<?php namespace Eledi\TranslationManager;
 
 use Illuminate\Translation\TranslationServiceProvider as BaseTranslationServiceProvider;
 
