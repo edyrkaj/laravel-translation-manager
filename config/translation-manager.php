@@ -41,4 +41,8 @@ return array(
 	 */
 	'sort_keys ' => false,
 
+	/**
+	 * Define where to save json files
+	 */
+	'json_path' => '/../../public/assets/i18n/'
 );

@@ -212,7 +212,7 @@ class Manager{
             foreach($tree as $locale => $groups){
                 if(isset($groups[self::JSON_GROUP])){
                     $translations = $groups[self::JSON_GROUP];
-                    $path = $this->app['path.lang'].'/'.$locale.'.json';
+	                $path = $this->app['path.lang']. array_get($this->config, 'json_path', false) . '/'.$locale.'.json';
                     $output = json_encode($translations, true);
                     $this->files->put($path, $output);
                 }
