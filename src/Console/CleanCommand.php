@@ -1,8 +1,8 @@
 <?php
 
-namespace Eledi\TranslationManager\Console;
+namespace Edyrkaj\TranslationManager\Console;
 
-use Eledi\TranslationManager\Manager;
+use Edyrkaj\TranslationManager\Manager;
 use Illuminate\Console\Command;
 
 class CleanCommand extends Command
@@ -21,7 +21,7 @@ class CleanCommand extends Command
      */
     protected $description = 'Clean empty translations';
 
-    /** @var \Eledi\TranslationManager\Manager */
+    /** @var \Edyrkaj\TranslationManager\Manager */
     protected $manager;
 
     public function __construct(Manager $manager)

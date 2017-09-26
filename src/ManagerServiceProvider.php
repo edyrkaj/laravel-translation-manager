@@ -1,4 +1,4 @@
-<?php namespace Eledi\TranslationManager;
+<?php namespace Edyrkaj\TranslationManager;
 
 use Illuminate\Routing\Router;
 use Illuminate\Support\ServiceProvider;
@@ -24,7 +24,7 @@ class ManagerServiceProvider extends ServiceProvider {
         $this->publishes([$configPath => config_path('translation-manager.php')], 'config');
 
         $this->app->singleton('translation-manager', function ($app) {
-            $manager = $app->make('Eledi\TranslationManager\Manager');
+            $manager = $app->make('Edyrkaj\TranslationManager\Manager');
             return $manager;
         });
 
@@ -74,7 +74,7 @@ class ManagerServiceProvider extends ServiceProvider {
         ], 'migrations');
 
         $config = $this->app['config']->get('translation-manager.route', []);
-        $config['namespace'] = 'Eledi\TranslationManager';
+        $config['namespace'] = 'Edyrkaj\TranslationManager';
 
         $router->group($config, function($router)
         {

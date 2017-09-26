@@ -1,13 +1,13 @@
-<?php namespace Eledi\TranslationManager;
+<?php namespace Edyrkaj\TranslationManager;
 
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller as BaseController;
-use Eledi\TranslationManager\Models\Translation;
+use Edyrkaj\TranslationManager\Models\Translation;
 use Illuminate\Support\Collection;
 
 class Controller extends BaseController
 {
-    /** @var \Eledi\TranslationManager\Manager  */
+    /** @var \Edyrkaj\TranslationManager\Manager  */
     protected $manager;
 
     public function __construct(Manager $manager)
@@ -46,7 +46,7 @@ class Controller extends BaseController
             ->with('group', $group)
             ->with('numTranslations', $numTranslations)
             ->with('numChanged', $numChanged)
-            ->with('editUrl', action('\Eledi\TranslationManager\Controller@postEdit', [$group]))
+            ->with('editUrl', action('\Edyrkaj\TranslationManager\Controller@postEdit', [$group]))
             ->with('deleteEnabled', $this->manager->getConfig('delete_enabled'));
     }
 

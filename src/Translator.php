@@ -1,4 +1,4 @@
-<?php namespace Eledi\TranslationManager;
+<?php namespace Edyrkaj\TranslationManager;
 
 use Illuminate\Translation\Translator as LaravelTranslator;
 use Illuminate\Events\Dispatcher;

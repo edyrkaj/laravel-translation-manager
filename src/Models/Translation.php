@@ -1,4 +1,4 @@
-<?php namespace Eledi\TranslationManager\Models;
+<?php namespace Edyrkaj\TranslationManager\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use DB;

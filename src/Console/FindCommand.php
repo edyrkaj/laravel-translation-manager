@@ -1,8 +1,8 @@
 <?php
 
-namespace Eledi\TranslationManager\Console;
+namespace Edyrkaj\TranslationManager\Console;
 
-use Eledi\TranslationManager\Manager;
+use Edyrkaj\TranslationManager\Manager;
 use Illuminate\Console\Command;
 
 class FindCommand extends Command
@@ -21,7 +21,7 @@ class FindCommand extends Command
      */
     protected $description = 'Find translations in php/twig files';
 
-    /** @var \Eledi\TranslationManager\Manager */
+    /** @var \Edyrkaj\TranslationManager\Manager */
     protected $manager;
 
     public function __construct(Manager $manager)

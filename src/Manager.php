@@ -1,8 +1,8 @@
-<?php namespace Eledi\TranslationManager;
+<?php namespace Edyrkaj\TranslationManager;
 
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Events\Dispatcher;
-use Eledi\TranslationManager\Models\Translation;
+use Edyrkaj\TranslationManager\Models\Translation;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\DB;
 use Symfony\Component\Finder\Finder;

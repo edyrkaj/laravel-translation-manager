@@ -1,9 +1,9 @@
 <?php
 
-namespace Eledi\TranslationManager\Console;
+namespace Edyrkaj\TranslationManager\Console;
 
 use Illuminate\Console\Command;
-use Eledi\TranslationManager\Manager;
+use Edyrkaj\TranslationManager\Manager;
 
 class ResetCommand extends Command
 {
@@ -21,7 +21,7 @@ class ResetCommand extends Command
      */
     protected $description = 'Delete all translations from the database';
 
-    /** @var \Eledi\TranslationManager\Manager */
+    /** @var \Edyrkaj\TranslationManager\Manager */
     protected $manager;
 
     public function __construct(Manager $manager)

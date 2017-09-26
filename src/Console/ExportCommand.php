@@ -1,8 +1,8 @@
 <?php
 
-namespace Eledi\TranslationManager\Console;
+namespace Edyrkaj\TranslationManager\Console;
 
-use Eledi\TranslationManager\Manager;
+use Edyrkaj\TranslationManager\Manager;
 use Illuminate\Console\Command;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputOption;
@@ -23,7 +23,7 @@ class ExportCommand extends Command
      */
     protected $description = 'Export translations to PHP files';
 
-    /** @var \Eledi\TranslationManager\Manager */
+    /** @var \Edyrkaj\TranslationManager\Manager */
     protected $manager;
 
     public function __construct(Manager $manager)
