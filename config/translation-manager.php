@@ -44,5 +44,10 @@ return array(
 	/**
 	 * Define where to save json files
 	 */
-	'json_path' => '/../../public/assets/i18n/'
+	'json_path' => '/../../public/assets/i18n/',
+
+    /**
+     * Define where to save json groups
+     */
+    'json_group' => '/public/assets/lang/'
 );
