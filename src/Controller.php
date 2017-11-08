@@ -133,11 +133,13 @@ class Controller extends BaseController {
         $isGroupJson = false;
         
         // Pattern for group json
-        $pattern = "/^_json";
+        $pattern = "/(?P<name>\w+)(_json)/";
+        
+        preg_match($pattern, $group, $matches, PREG_OFFSET_CAPTURE);
         
         if ( $group == "_json" ) {
             $isJson = true;
-        } else if(preg_match($pattern, $group)) {
+        } else if(!empty($matches)) {
             $isJson = false;
             $isGroupJson = true;
         }
